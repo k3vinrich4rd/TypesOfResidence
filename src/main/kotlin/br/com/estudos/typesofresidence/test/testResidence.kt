@@ -18,20 +18,32 @@ fun main() {
     val kevinRichard = People(
         "Kevin Richard",
         "111.111.111-11",
-        address = address,
-        10
+        address = address, 10
     )
 
     val kitnet = Kitnet(
         kevinRichard,
-        address,
-        "Black",
-        door = true,
-        windown = true
+        color = "Black",
+        doors = 1,
+        windowns = 2,
+        funiture = 10
     )
 
-    println("Informações da Kitnet")
-    println("Nome do proprietário: ${kitnet.holder.name}")
-    println("Cpf do proprietário: ${kitnet.holder.cpf}")
-    println("Endereço do proprietário: ${kitnet.address}")
+
+
+
+
+    println("\nInformações do proprietário da Kitnet: ")
+    println("Nome do proprietário: ${kevinRichard.name}")
+    println("Cpf do proprietário: ${kevinRichard.cpf}")
+    println("Endereço do proprietário: ${address.publicPlace}")
+    println("Chave do proprietário: ${kevinRichard.key}\n")
+
+    println("Informações sobre a Kitnet: ")
+    println("Nome do proprietário: ${kevinRichard.name}")
+    println("Cor da residencia: ${kitnet.color}")
+    println("Quantidade de janelas: ${kitnet.windowns}")
+    println("Quantidade de portas: ${kitnet.funiture}")
+
+
 }

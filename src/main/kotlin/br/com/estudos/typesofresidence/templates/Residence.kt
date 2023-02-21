@@ -2,10 +2,11 @@ package br.com.estudos.typesofresidence.templates
 
 abstract class Residence(
     val holder: People, //Propriétario
-    val address: Address, //Endereço
     val color: String, //Cor
-    val door: Boolean, //Porta
-    val windown: Boolean //Janela
+    val doors: Int, //Porta
+    val windowns: Int, //Janela
+    var funiture: Int //Moveis
+
 ) {
     companion object CountResidences {
         var total = 0
@@ -15,4 +16,12 @@ abstract class Residence(
     init {
         CountResidences.total++
     }
+
+    fun furnitureInTheResidence(value: Int) {
+        if (value > 0) {
+            this.funiture += value
+        }
+    }
+
+
 }
