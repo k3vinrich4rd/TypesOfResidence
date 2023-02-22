@@ -26,5 +26,4 @@ fun main() {
     systemIntern.toEnter(leticia, 10)
 
 
-
 }

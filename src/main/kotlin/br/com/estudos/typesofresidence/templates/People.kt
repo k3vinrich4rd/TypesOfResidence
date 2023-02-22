@@ -1,6 +1,6 @@
 package br.com.estudos.typesofresidence.templates
 
- class People(
+class People(
     val name: String = "",
     val cpf: String = "",
     val address: Address = Address(),

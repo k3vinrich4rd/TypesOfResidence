@@ -13,8 +13,8 @@ class Flat(
     windowns = windowns,
     funiture = funiture
 ), DonateMobile {
-    override fun donateMobilie(value: Int, destiny: Residence): Boolean{
-        if (funiture >= value){
+    override fun donateMobilie(value: Int, destiny: Residence): Boolean {
+        if (funiture >= value) {
             funiture -= value
             destiny.furnitureInTheResidence(value)
             return true

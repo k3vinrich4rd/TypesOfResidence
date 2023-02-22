@@ -5,7 +5,7 @@ class SystemIntern {
         if (people.authenticated(key)) {
             println("Seja bem vindo a sua residência")
         } else {
-            println("Falha na autenticação")
+            println("Falha na autenticaçãol")
         }
     }
 }
