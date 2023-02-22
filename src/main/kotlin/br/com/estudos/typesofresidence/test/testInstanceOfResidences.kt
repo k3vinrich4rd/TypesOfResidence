@@ -1,8 +1,6 @@
 package br.com.estudos.typesofresidence.test
 
-import br.com.estudos.typesofresidence.templates.Address
-import br.com.estudos.typesofresidence.templates.Kitnet
-import br.com.estudos.typesofresidence.templates.People
+import br.com.estudos.typesofresidence.templates.*
 
 fun main() {
 
@@ -29,9 +27,13 @@ fun main() {
         funiture = 10
     )
 
-
-
-
+    val flat = Flat(
+        kevinRichard,
+        "Red",
+        1,
+        1,
+        5
+    )
 
     println("\nInformações do proprietário da Kitnet: ")
     println("Nome do proprietário: ${kevinRichard.name}")
@@ -43,7 +45,14 @@ fun main() {
     println("Nome do proprietário: ${kevinRichard.name}")
     println("Cor da residencia: ${kitnet.color}")
     println("Quantidade de janelas: ${kitnet.windowns}")
-    println("Quantidade de portas: ${kitnet.funiture}")
+    println("Quantidade de portas: ${kitnet.funiture}\n")
 
+    println("Informações sobre a Kitnet: ")
+    println("Nome do proprietário: ${kevinRichard.name}")
+    println("Cor da residencia: ${flat.color}")
+    println("Quantidade de janelas: ${flat.windowns}")
+    println("Quantidade de portas: ${flat.funiture}\n")
+
+    println("Total de residências criadas ${Residence.total}")
 
 }

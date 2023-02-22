@@ -18,7 +18,6 @@ class Flat(
             funiture -= value
             destiny.furnitureInTheResidence(value)
             return true
-
         }
         return false
     }

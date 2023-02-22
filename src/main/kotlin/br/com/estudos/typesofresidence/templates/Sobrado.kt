@@ -1,12 +1,11 @@
 package br.com.estudos.typesofresidence.templates
 
-class Kitnet(
+class Sobrado(
     holder: People,
     color: String,
     doors: Int,
     windowns: Int,
     funiture: Int
-//Herança
 ) : Residence(
     holder = holder,
     color = color,
