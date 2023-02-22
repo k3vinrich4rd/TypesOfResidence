@@ -39,7 +39,7 @@ fun main() {
     println("Nome do proprietário: ${kevinRichard.name}")
     println("Cpf do proprietário: ${kevinRichard.cpf}")
     println("Endereço do proprietário: ${address.publicPlace}")
-    println("Chave do proprietário: ${kevinRichard.key}\n")
+
 
     println("Informações sobre a Kitnet: ")
     println("Nome do proprietário: ${kevinRichard.name}")
