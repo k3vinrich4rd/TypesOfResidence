@@ -32,7 +32,7 @@ class Kitnet(
             )
         }
         //Se a quantidade de móveis for maior ou igual que valor
-            funiture -= value //Subtraia o valor da quantidade de moveis
+        funiture -= value //Subtraia o valor da quantidade de moveis
         destiny.furnitureInTheResidence(value)//Use destiny para usar o comportamento de residence
 
     }
