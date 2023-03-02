@@ -7,7 +7,7 @@ abstract class Residence(
     val windowns: Int, //Janela
     var funiture: Int //Moveis
 
-) {
+) : Authenticated by holder {  //Delegação/Agregação
     companion object CountResidences {
         var total = 0
             private set
@@ -22,6 +22,5 @@ abstract class Residence(
             this.funiture += value
         }
     }
-
 
 }

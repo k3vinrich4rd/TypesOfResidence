@@ -58,7 +58,7 @@ fun main() {
     println("Resultado: ${kitnet.funiture}\n")
 
     println("Doando móveis da kitnet para o flat")
-    kitnet.donateMobilie(5, flat)
+    kitnet.donateMobilie(5, flat, 5)
     println("Resultado: ${kitnet.funiture}\n")
 
     println("Quantidade de móveis do flat depois da doação recebida")
@@ -72,7 +72,7 @@ fun main() {
     println("Resultado: ${flat.funiture}\n")
 
     println("Doando móveis do flat para o kitnet")
-    flat.donateMobilie(1, kitnet)
+    flat.donateMobilie(1, kitnet, 5)
     println("Resultado: ${flat.funiture}\n")
 
     println("Quantidade de móveis da kitnet depois da doação recebida")
